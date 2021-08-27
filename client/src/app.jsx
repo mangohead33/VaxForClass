@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import React from 'react';
+import CovidInfo from './components/CovidInfo';
 
 class App extends React.Component {
   constructor(prop) {
@@ -11,8 +12,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        Hello World
+      // <div className="leftbar">
+      //  Have at Least two Links
+      // </div>
+      <div className="mainPage">
+        <CovidInfo />
       </div>
     );
   }
