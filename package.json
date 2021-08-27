@@ -36,6 +36,7 @@
     "webpack-dev-server": "^4.0.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.12",
     "pg": "^8.7.1",
