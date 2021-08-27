@@ -15,6 +15,8 @@ Setting up the project:
 10) npm install @babel/core babel-loader --save-dev
 11) npm install @babel/preset-env @babel/preset-react --save-dev
 12) Finally set up config files and server, along with scripts.
+13) $ npm install axios
+
 
 
 
