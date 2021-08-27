@@ -7,7 +7,7 @@ module.exports = {
     const options = {
       url: baseURL,
       params: {
-        max: 30,
+        max: 50,
       },
     };
     return axios(options)

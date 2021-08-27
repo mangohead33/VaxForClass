@@ -11,6 +11,7 @@ class CovidInfo extends React.Component {
     this.state = {
       cdcNews: [],
       show: 10,
+      max: 50,
     };
     this.onClick = this.onClick.bind(this);
   }
@@ -28,8 +29,8 @@ class CovidInfo extends React.Component {
   }
 
   onClick(e) {
-    const { show } = this.state;
-    if (show !== 30) {
+    const { show, max } = this.state;
+    if (show !== max) {
       const showMore = show + 10;
       this.setState({
         show: showMore,
