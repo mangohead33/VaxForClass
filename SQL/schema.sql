@@ -2,7 +2,6 @@ DROP DATABASE IF EXISTS school;
 CREATE DATABASE school;
 
 \c school;
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO mango;
 
 CREATE TABLE IF NOT EXISTS students (
 	id serial PRIMARY KEY NOT NULL,
@@ -55,4 +54,6 @@ INSERT INTO students(firstName, lastName, vaccinated, subject) VALUES ('Joe', 'B
 
 INSERT INTO students(firstName, lastName, vaccinated, subject) VALUES ('Remy', 'Hu', FALSE, 'Math');
 
-INSERT INTO students(firstName, lastName, vaccinated, subject) VALUES ('Ron', 'Peasly', TRUE, 'Math')
+INSERT INTO students(firstName, lastName, vaccinated, subject) VALUES ('Ron', 'Peasly', TRUE, 'Math');
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO calvin;

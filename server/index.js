@@ -22,7 +22,7 @@ app.get('/cdc', (req, res) => {
 app.get('/math', (req, res) => {
   students.getStudents()
     .then((data) => {
-      res.status(200).send(data);
+      res.status(200).send(data.rows);
     })
     .catch((err) => {
       res.status(404).send(err);
