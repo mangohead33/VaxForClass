@@ -41,9 +41,9 @@ const NewsTiles = ({ news, show }) => {
   });
   const displayArticles = newsArticles.slice(0, show);
   return (
-    <div className="newsbox">
+    <>
       {displayArticles}
-    </div>
+    </>
   );
 };
 export default NewsTiles;

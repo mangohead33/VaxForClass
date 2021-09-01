@@ -41,14 +41,16 @@ class CovidInfo extends React.Component {
   render() {
     const { cdcNews, show, max } = this.state;
     return (
-      <div>
+      <>
         <h1>Covid 19 CDC News</h1>
-        <NewsTiles news={cdcNews} show={show} />
-        {
+        <div className="newsbox">
+          <NewsTiles news={cdcNews} show={show} />
+          {
           max > show
           && <button onClick={this.onClick} type="button">Load More</button>
         }
-      </div>
+        </div>
+      </>
 
     );
   }
