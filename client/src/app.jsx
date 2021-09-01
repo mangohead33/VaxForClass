@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     const { display } = this.state;
     return (
-      <>
+      <div className="container">
         <Banner />
         <ul>
           <li onClick={() => { this.onClick('covidInfo'); }}>CDC Covid News</li>
@@ -37,7 +37,7 @@ class App extends React.Component {
           {display === 'teachersPortal'
         && <Teachers />}
         </div>
-      </>
+      </div>
     );
   }
 }
