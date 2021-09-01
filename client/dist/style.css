@@ -1,29 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*                   Banner                                  */
 .banner {
-  margin: auto;
-  width: 100%;
-  padding: 10px;
-  background-color: midnightblue;
+  line-height: 1.15;
+  font-size: 2rem;
+  margin: 0;
 }
 h1 {
   text-align: center;
 }
-.title {
-  color: silver;
+h2 {
+  text-align: center;
 }
 /*                   Navigation                              */
 ul {
   list-style-type: none;
-  margin: auto;
-  width: 100%;
+  width: 80%;
   padding: 10px;
   overflow: hidden;
   background-color: #333333;
+  text-align: center;
 }
 
 li {
-  float: left;
-  display: block;
+  display: inline;
   color: white;
   text-align: center;
   padding: 16px;
@@ -33,32 +37,21 @@ li:hover {
   background-color: #111111;
 }
 
-/*                   Body                                    */
-body {
-  padding-left: 100px;
-  padding-right: 100px;
-  margin: 0 auto;
-  color:#272727;
-  /* background-color: #f1f0f5; */
-  background-color: lightcoral;
-}
-
-/* .mainpage {
-  padding-left: 100px;
-  padding-right: 100px;
-  margin: 0 auto;
-} */
 
 /*                   News Article                            */
 .newsbox {
-  display: flexbox;
+display:flex;
+flex-direction: column;
   padding: 10px 30px 0 30px;
-  border: 3px solid green;
+  border: 5px solid black;
+  border-radius: 30px;
 }
 .cdcArticle {
-  border: 1px solid yellow;
+  border: 1px solid silver;
   margin-bottom: 10px;
   font-weight: bolder;
+  box-shadow: 10px 5px 5px lightgray;
+
 }
 .firstLine {
   display: flex;
@@ -76,6 +69,10 @@ body {
 .urlLink {
   text-align: center;
 }
+button {
+  text-align: center;
+  margin-right:10px;
+}
 /*                   Teachers                            */
 .teacherContainer {
   display: flex;
@@ -92,3 +89,45 @@ body {
 .teachersRow2 {
   display: inline-block;
 }
+/*                   Students                            */
+.txn {
+  width: 80%;
+  margin: 20px;
+}
+.txn-table {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 3rem;
+  line-height: 1.5;
+  width: 80%;
+}
+.txn-header {
+  display: none;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.txn-header > .txn-data {
+  white-space: normal;
+}
+
+.txn-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.txn-data {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+
