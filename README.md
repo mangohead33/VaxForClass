@@ -1,6 +1,5 @@
 # VaxForClass
-A teachers Portal that gives Teachers a quick glance of the their class roster and the vaccination of their students.
-Also contains covid 19 stats, and latest news!
+As teachers gear up and return to classes they surely have many concerns returning back to school. Issues such as health and saftey and how to protect themselves as they guide the next generation through these turbulent times. VaxForClass provides CDC covid information to equip teachers with the knowledge they'll need to stay informed and prepared, while offering teachers a quick glance of the status of students vaccination status!
 
 Setting up the project:
 1) npm init -y
@@ -17,6 +16,8 @@ Setting up the project:
 12) Finally set up config files and server, along with scripts.
 13) $ npm install axios
 
+About the App so far ~ The home portal provides the lastest Covid-19 information curated from the CDC API. Furthermore the app displays a sample teachers portal that displays a quick visualk of students vaccination status along with student information!
 
+Tech Stack - React, node.js, express, axios~~
 
 
